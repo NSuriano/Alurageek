@@ -1,6 +1,6 @@
 
 async function listarProdutos(){
-    const conexion =  await fetch ("http://localhost:3000/productos");
+    const conexion =  await fetch ("https://alurageek-whef-aukkwft6e-norma-surianos-projects.vercel.app/");
 
     const conexionConvertida = conexion.json();
 
@@ -13,7 +13,7 @@ listarProdutos();
 
 async function agregarCards(nombre,precio,imagen) {
 
-    const conexion = await fetch("http://localhost:3000/productos", {
+    const conexion = await fetch("https://alurageek-whef-aukkwft6e-norma-surianos-projects.vercel.app/", {
         method:"POST",
         headers:{"Content-Type":"application/json"},
       
@@ -34,7 +34,7 @@ async function agregarCards(nombre,precio,imagen) {
 const deleteProductos = async (id) => {
 
     try {
-        const res = await fetch(`http://localhost:3000/productos/productos/${id}`, {
+        const res = await fetch(`https://alurageek-whef-aukkwft6e-norma-surianos-projects.vercel.app/productos/${id}`, {
             method: "DELETE"
         });
 
